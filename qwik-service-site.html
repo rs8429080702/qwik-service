@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwik Service | Vehicle Service Appointments</title>
+<style>
+  :root { --bg: #f5f7fb; --card: #fff; --text: #1d2433; --muted: #5b6577; --brand: #c8102e; --dark: #14213d; --line: #dde3ee; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--brand); }
+  header { background: var(--dark); color: #fff; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { font-weight: 800; font-size: 22px; letter-spacing: .5px; }
+  .logo span { color: #ff4d5e; }
+  .nav ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
+  .nav a { color: #fff; text-decoration: none; opacity: .85; }
+  .hero { background: linear-gradient(135deg, var(--dark), #24365e); color: #fff; padding: 56px 0 64px; }
+  .hero h1 { font-size: 38px; line-height: 1.2; margin: 0 0 12px; max-width: 640px; }
+  .hero p { font-size: 18px; opacity: .9; max-width: 600px; margin: 0 0 24px; }
+  .call-box { background: #fff; color: var(--text); border-radius: 12px; padding: 20px 24px; max-width: 560px; box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+  .call-box h2 { margin: 0 0 8px; font-size: 20px; }
+  .call-box ol { margin: 0; padding-left: 20px; }
+  section { padding: 48px 0 8px; }
+  section h2 { font-size: 26px; margin: 0 0 20px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; color: #0b6b3a; background: #e3f5ea; border-radius: 99px; padding: 2px 8px; margin-top: 8px; }
+  details { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 18px; margin-bottom: 10px; }
+  summary { font-weight: 600; cursor: pointer; }
+  details p { margin: 8px 0 0; color: var(--muted); }
+  footer { margin-top: 56px; background: var(--dark); color: #c9d1e3; padding: 28px 0 120px; font-size: 14px; }
+  @media (max-width: 640px) { .nav ul { display: none; } .hero h1 { font-size: 30px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo">QWIK<span>SERVICE</span></div>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#centers">Service centers</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#call">Book by phone</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="hero" id="call">
+  <div class="wrap">
+    <h1>Book, check or change your service appointment in one call</h1>
+    <p>Talk to Quinn, our voice assistant, 24/7 in English or German. No waiting on hold.</p>
+    <div class="call-box">
+      <h2>Call Quinn from your browser</h2>
+      <ol>
+        <li>Click the <strong>call button</strong> at the bottom right of this page and allow your microphone.</li>
+        <li>Say <strong>"English"</strong> or <strong>"German"</strong>.</li>
+        <li>Have your phone number, license plate and postal code ready to verify your account.</li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <section id="services">
+    <h2>Our services</h2>
+    <div class="grid">
+      <div class="card"><h3>Oil Change</h3><p>Engine oil and filter replaced with manufacturer-approved oil.</p></div>
+      <div class="card"><h3>Tire Service</h3><p>Rotation, balancing, repair and seasonal tire change.</p></div>
+      <div class="card"><h3>Brake Service</h3><p>Pads, discs and brake fluid checked and replaced as needed.</p></div>
+      <div class="card"><h3>Battery Service</h3><p>Battery test, charging system check and replacement.</p></div>
+      <div class="card"><h3>Diagnostics</h3><p>Full electronic diagnostic scan with a technician report.</p></div>
+      <div class="card"><h3>Government Safety Inspection</h3><p>Mandatory vehicle safety inspection at certified centers only.</p></div>
+    </div>
+  </section>
+
+  <section id="centers">
+    <h2>Service centers</h2>
+    <div class="grid">
+      <div class="card"><h3>Berlin</h3><p>Germany</p><span class="tag">Inspection certified</span></div>
+      <div class="card"><h3>Munich</h3><p>Germany</p></div>
+      <div class="card"><h3>San Francisco</h3><p>United States</p><span class="tag">Inspection certified</span></div>
+      <div class="card"><h3>New York</h3><p>United States</p></div>
+      <div class="card"><h3>Sydney</h3><p>Australia</p><span class="tag">Inspection certified</span></div>
+      <div class="card"><h3>Melbourne</h3><p>Australia</p></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Frequently asked questions</h2>
+    <details><summary>Are loaner vehicles available during service?</summary><p>Ask Quinn when you call. Quinn checks the options for your service and center.</p></details>
+    <details><summary>Will I get a confirmation?</summary><p>Quinn reads your appointment ID back to you at the end of every booking or change.</p></details>
+    <details><summary>Can I cancel or reschedule?</summary><p>Yes. Call Quinn, verify your account, and say which appointment you want to change.</p></details>
+    <details><summary>What time should I arrive?</summary><p>Quinn can answer this and other questions about your visit during the call.</p></details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Qwik Service · Automotive service appointments · Demo site for the Cognigy.AI capstone project</div>
+</footer>
+
+<script src="https://github.com/Cognigy/click-to-call-widget/releases/latest/download/webRTCWidget.js"></script>
+<script>
+  addEventListener("load", function () {
+    if (window.initWebRTCWidget) {
+      window.initWebRTCWidget("https://endpoint-trial.cognigy.ai/a96b51f8518d4f980045aea3b955f889cf146b3768717ec3a4d7fe598b4e3e21");
+    }
+  });
+</script>
+</body>
+</html>
